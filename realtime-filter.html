@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>realtime-filter</title>
+    <link rel="stylesheet" href="realtime-filter.css" />
+</head>
+
+<body>
+    <div id="allArea">
+        <h1>リアルタイムフィルター</h1>
+        <p>入力した文字を含まない要素は非表示となります</p>
+        <form>
+            <input id="inputArea" type="text" placeholder="検索ワードを入力" />
+        </form>
+        <!--onkeyup="inputCheck()" -->
+        <div id="itemArea">
+            <div class="item" id="car">
+                <img src="https://motor-fan.jp/images/articles/10015782/big_main10015782_20200806113200000000.jpg" alt="車" />
+                <p>キーワード</p>
+                <p id="carText">車 くるま kuruma</p>
+            </div>
+            <div class="item" id="sky">
+                <img src="https://pakutaso.cdn.rabify.me/shared/img/thumb/N749_sugasugasiiaozora.jpg.webp?d=1420" alt="青空" />
+                <p>キーワード</p>
+                <p id="skyText">青空　あおぞら　aozora</p>
+            </div>
+            <div class="item" id="asagao">
+                <img src="https://shop.takii.co.jp/simages/product/large/main/785-FAA110.jpg?202105271410" alt="朝顔" />
+                <p>キーワード</p>
+                <p id="asagaoText">朝顔　あさがお　asagao</p>
+            </div>
+            <div class="item" id="horse">
+                <img src="https://banusy.dmm.com/_img/recruitment_horse/recommend/2019/kisstoheaven2019.jpg" alt="馬" />
+                <p>キーワード</p>
+                <p id="horseText">馬　うま　uma</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="realtime-filter.js" charset="utf-8"></script>
+</body>
+
+</html>
